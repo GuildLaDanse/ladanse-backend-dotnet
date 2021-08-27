@@ -52,7 +52,7 @@ namespace LaDanse.Persistence.Extensions
             builder
                 .HasColumnType(dbType)
                 .HasCharSet("utf8mb4")
-                .HasCollation("utf8mb4_unicode_ci");
+                .UseCollation("utf8mb4_unicode_ci");
         }
         
         public static void HasForeignKeyColumnType(this PropertyBuilder<Guid> builder)

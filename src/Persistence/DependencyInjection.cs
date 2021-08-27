@@ -15,9 +15,7 @@ namespace LaDanse.Persistence
             services.AddDbContext<LaDanseDbContext>(options =>
                 options.UseMySql(
                     configuration.GetEnvironmentValue(EnvNames.LaDanseDatabaseConnection),
-                    new MySqlServerVersion(new Version(8, 0, 22)),
-                    mySqlOptions => mySqlOptions
-                        .CharSetBehavior(CharSetBehavior.NeverAppend)
+                    new MySqlServerVersion(new Version(8, 0, 22))
                 ));
 
             services.AddScoped<ILaDanseDbContext>(provider => provider.GetService<LaDanseDbContext>());
