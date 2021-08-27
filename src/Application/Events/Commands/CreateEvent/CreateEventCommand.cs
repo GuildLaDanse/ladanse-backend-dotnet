@@ -1,5 +1,4 @@
-﻿using System;
-using LaDanse.Application.Events.Models;
+﻿using LaDanse.Application.Events.Models;
 using MediatR;
 
 namespace LaDanse.Application.Events.Commands.CreateEvent

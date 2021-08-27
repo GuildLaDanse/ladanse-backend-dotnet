@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using LaDanse.Application.Common.Interfaces;
 using LaDanse.Application.Events.Commands.CreateEvent;
-using LaDanse.Application.Events.Models;
-using LaDanse.Domain.Entities.Comments;
+using LaDanse.Domain.Entities.Events;
 using LaDanse.ServiceBus.Abstractions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using Event = LaDanse.Domain.Entities.Events.Event;
 
 namespace LaDanse.Application.Events.Commands.UpdateBasicEvent
 {

@@ -1,5 +1,4 @@
-﻿using System;
-using LaDanse.Application.Common.Interfaces;
+﻿using LaDanse.Application.Common.Interfaces;
 using LaDanse.Domain.Entities.CharacterClaims;
 using LaDanse.Domain.Entities.Comments;
 using LaDanse.Domain.Entities.Events;
@@ -14,8 +13,6 @@ using LaDanse.Domain.Entities.Queues;
 using LaDanse.Domain.Entities.Settings;
 using LaDanse.Domain.Entities.Telemetry;
 using LaDanse.Persistence.Extensions;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace LaDanse.Persistence

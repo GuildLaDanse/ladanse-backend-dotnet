@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Authorization.Implementation
+﻿namespace Authorization.Implementation
 {
     public class Class1
     {
