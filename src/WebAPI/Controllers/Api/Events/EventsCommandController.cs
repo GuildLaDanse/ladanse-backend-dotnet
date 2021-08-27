@@ -33,10 +33,7 @@ namespace LaDanse.WebAPI.Controllers.Api.Events
         
         [HttpPut("/api/events/{eventId}/basic")]
         [Produces("application/json")]
-        public async Task<ActionResult<Event>> UpdateCoreEventAsync(
-            [FromServices] IMediator mediator, 
-            string eventId,
-            [FromBody] UpdateBasicEvent updateBasicEvent)
+        public async Task<ActionResult<Event>> UpdateCoreEventAsync([FromServices] IMediator mediator, string eventId, [FromBody] UpdateBasicEvent updateBasicEvent)
         {
             Guid gEventId;
 
